@@ -1,19 +1,19 @@
-import { INCREMENT, DECREMENT } from '../constants'
+import { INCREMENT, DECREMENT } from "../constants";
 
 export const increment = (isServer) => {
-  return dispatch => {
+  return (dispatch) => {
     dispatch({
       type: INCREMENT,
-      from: isServer ? 'server' : 'client'
-    })
-  }
-}
+      from: isServer ? "server" : "client",
+    });
+  };
+};
 
 export const decrement = (isServer) => {
-  return dispatch => {
+  return (dispatch) => {
     dispatch({
       type: DECREMENT,
-      from: isServer ? 'server' : 'client'
-    })
-  }
-}
+      from: isServer ? "server" : "client",
+    });
+  };
+};
