@@ -168,7 +168,6 @@ export default function MiniDrawer() {
       </Drawer>
       <main className={classes.content}>
         <div className={classes.toolbar} />
-        // komen
       </main>
     </div>
   );

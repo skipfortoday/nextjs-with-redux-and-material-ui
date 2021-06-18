@@ -67,7 +67,6 @@ Count.getInitialProps = ({ store }) => {
     type: INCREMENT,
     from: "server",
   });
-
   return {};
 };
 
