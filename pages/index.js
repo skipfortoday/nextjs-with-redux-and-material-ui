@@ -11,6 +11,7 @@ import StarIcon from "@material-ui/icons/StarBorder";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Link from "@material-ui/core/Link";
+import Route from "next/link";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import Box from "@material-ui/core/Box";
@@ -99,7 +100,6 @@ const footers = [
 
 export default function Pricing() {
   const classes = useStyles();
-
   return (
     <React.Fragment>
       <CssBaseline />
@@ -119,30 +119,12 @@ export default function Pricing() {
             L'viors Promotion
           </Typography>
           <nav>
-            <Link
-              variant="button"
-              color="textPrimary"
-              href="#"
-              className={classes.link}
-            >
-              Features
-            </Link>
-            <Link
-              variant="button"
-              color="textPrimary"
-              href="#"
-              className={classes.link}
-            >
-              Enterprise
-            </Link>
-            <Link
-              variant="button"
-              color="textPrimary"
-              href="#"
-              className={classes.link}
-            >
-              Support
-            </Link>
+            <Route href="/register">
+              <Button>Daftar</Button>
+            </Route>
+            <Route href="/login">
+              <Button>Login</Button>
+            </Route>
           </nav>
         </Toolbar>
       </AppBar>
