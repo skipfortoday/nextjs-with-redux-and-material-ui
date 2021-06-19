@@ -5,6 +5,9 @@ export const initialState = {
   value: 0,
   action: null,
   from: null,
+  isAuth: false,
+  isError: false,
+  account: null,
 };
 
 export const counter = (state = initialState, action) => {
